@@ -1,5 +1,6 @@
 **1. Requisitos do Sistema**
-Requisitos Funcionais
+
+**Requisitos Funcionais**
 
 São as funções que o sistema deverá realizar:
 
