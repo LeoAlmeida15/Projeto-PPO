@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas | Receitas Fáceis e Econômicas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">Receitas <span>Fáceis</span></a>
+  <nav>
+    <a href="index.html">Início</a><a href="receitas.html">Receitas</a>
+    <a href="categorias.html">Categorias</a><a href="contato.html">Contato</a>
+    <a href="login.html" id="loginLink">Entrar</a>
+    <button class="link-button hidden" id="logoutBtn">Sair</button>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="section-heading">
+    <div><p class="eyebrow">Explore</p><h1>Receitas</h1></div>
+  </div>
+
+  <div class="filters">
+    <input id="busca" type="search" placeholder="Pesquisar receita...">
+    <select id="categoria"><option value="">Todas as categorias</option></select>
+    <button class="btn" id="buscarBtn">Pesquisar</button>
+  </div>
+
+  <div id="listaReceitas" class="recipe-grid"></div>
+  <div class="pagination">
+    <button class="btn secondary" id="anterior">Anterior</button>
+    <span id="paginaAtual">Página 1</span>
+    <button class="btn secondary" id="proxima">Próxima</button>
+  </div>
+</main>
+<footer>Receitas Fáceis e Econômicas © 2026</footer>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/receitas.js"></script>
+</body>
+</html>
